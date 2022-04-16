@@ -1,12 +1,12 @@
 package com.company;
 import java.util.Scanner;
 public class Task3 {
-
     public static void main(String[] args) {
-        double a, b, c, min;
         Scanner sc = new Scanner(System.in);
-        System.out.println("через кому типу '1,5'");
+        double a, b, c, min;
         System.out.print("Введіть перше дробове число: ");
+
+
         if (sc.hasNextDouble()) {
             a = sc.nextDouble();
             System.out.print("Введіть друге дробове число: ");
@@ -34,3 +34,4 @@ public class Task3 {
         }
     }
 }
+//неміняв логіку скопіював з практичної

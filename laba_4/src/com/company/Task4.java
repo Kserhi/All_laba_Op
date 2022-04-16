@@ -1,20 +1,20 @@
 package com.company;
-
+import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
-        int n,x,i;
-        n= 6;//введіть чило факторіалу
-        x=1;
-        i=1;
-        for(;i<=n; i++) x*=i ;
-        System.out.println(x+" for");
+        Scanner scanner =new Scanner(System.in);
+        int n,q=1,w=1;
+        System.out.println("введіть число факторіалу:");
+        n=scanner.nextInt();
 
-        x=1;
-        i=1;
-        while(i<=n){
-            x*=i;
-            i++;
+        for(;w<=n; w++) q*=w ;
+        System.out.println(q+" for(n!)");
+
+        while(w<=n){
+            q*=w;
+            w++;
         }
-        System.out.println(x+" while");
+        System.out.println(q+" while(n!)");
     }
 }
+//спеціально змінив логіку

@@ -2,9 +2,14 @@ package com.company;
 import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
-        Scanner s1=new Scanner(System.in);
-        String a ="";
-        for (int i =0;i<5;i++) a=a.concat(s1.next()+" ");
-        System.out.println(a);
+        Scanner scanner=new Scanner(System.in);
+        String str="";
+        System.out.println("Введіть слово:");
+        for (int i =0;i<5;i++){
+            str=str.concat(scanner.nextLine()+" ");
+            System.out.println("Введіть наступне слово:");
+        }
+        System.out.println("Результат: "+str);
     }
 }
+//спеціально змінив логіку
