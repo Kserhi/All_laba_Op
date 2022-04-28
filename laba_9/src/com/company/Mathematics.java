@@ -1,19 +1,29 @@
 package com.company;
 
 public class Mathematics {
+    String name;
     int age;
     double weight;
-    String name;
     int levelSkill;
-    public Mathematics(int age, double weight, String name) {
+
+    public Mathematics(String name,int levelSkill , int age, double weight) {
+        this.name = name;
+        this.levelSkill=levelSkill;
         this.age = age;
         this.weight = weight;
-        this.name = name;
     }
 
-    void present(){//шось робе
+
+
+    void present(){//статине імя динамічна логіка
         System.out.println("Вісім привіт Я математик "+name+" мені "+age+" років і моя вага становить "+weight+" кілограмів");
     }
+    void present(int x){//статине імя динамічна логіка (перевизначено)
+        System.out.println("Вісім привіт Я математик "+name+" мені "+(age+x)+" років і моя вага становить "+weight+" кілограмів");
+    }
+
+
+
 
     double distance(Vector vector,Cord M0,Cord M1){//приймає напрямний вектор і точну яка належить прямій
         Vector vector1=new Vector(M1.x-M0.x, M1.y-M0.y, M1.z-M0.z);//по формулі вектор "м0м1"

@@ -14,9 +14,17 @@ public class Vector {
     void vectorAp(int n){//просто шось робе
         System.out.println("Vector("+(x+n)+";"+(y+n)+";"+(z+n)+")");
     }
+    void vectorAp(double n){//просто шось робе 2
+        System.out.println("Vector("+(x+n)+";"+(y+n)+";"+(z+n)+")");
+    }
+
+
+
     double vectorAbs(){//модуль вектора
         return Math.sqrt(Math.pow(x,2)+Math.pow(y,2)+Math.pow(z,2));
     }
+
+
     void test(int...array){//експеремент
         for(int i : array){
             x+=i;
