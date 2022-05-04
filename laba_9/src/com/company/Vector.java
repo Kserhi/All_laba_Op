@@ -10,7 +10,7 @@ public class Vector {
         this.y = y;
         this.z = z;
     }
-
+    //перевизначиний
     void vectorAp(int n){//просто шось робе
         System.out.println("Vector("+(x+n)+";"+(y+n)+";"+(z+n)+")");
     }
@@ -18,6 +18,9 @@ public class Vector {
         System.out.println("Vector("+(x+n)+";"+(y+n)+";"+(z+n)+")");
     }
 
+    void present(){//статине імя динамічна логіка
+        System.out.println("Привіт я вектор з кординатами:("+x+";"+y+";"+z+")");
+    }
 
 
     double vectorAbs(){//модуль вектора

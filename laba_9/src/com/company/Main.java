@@ -9,13 +9,15 @@ public class Main {
 
 
         Vector vector =new Vector(15,0,6);
+
+
         Mathematics mathematics =new Mathematics("Петро",4,35,57.3);
 
         System.out.println(cord.distanceFoPoint(cord1));
         System.out.println(cord.distanceFoPoint(21,10,0));
 
         vector.vectorAp(1);
-        vector.vectorAp(1.0);
+        vector.vectorAp(1.2);
 
 
         mathematics.present();
@@ -23,6 +25,7 @@ public class Main {
 
         cord.present();
 
+        vector.present();
     }
 }
 
