@@ -7,12 +7,13 @@ public class Task_4 {
         for (int i=0;i<3;i++){ //стрінгою подаєм 3 рандомні числа
             randomStr=randomStr.concat(String.valueOf( (int)(Math.random() * 3)+1));
         }
-        System.out.println(randomStr);//сапрощуєм життя
-        for (int p=0;p<2;p++){//реалузуєм 2 спроби
-            if(randomStr.equals(scanner.nextLine())){//порівнюєм рандомне з введеним
-                System.out.println("молодець");
+        System.out.println(randomStr);//бачем рандомне
+
+        for (int i=0;i<2;i++){//2 спроби
+            if(randomStr.equals(scanner.nextLine())){//порівнюєм
+                System.out.println("вгадали");
                 break;
-            }else System.out.println("зле");
+            }else System.out.println("невгадали");
         }
     }
 }
