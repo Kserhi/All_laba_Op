@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d0f1068-852a-4c55-876e-2fe499a44736" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/laba_6/com/company/Task1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/laba_6/com/company/Task2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/laba_6/com/company/Task3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/laba_6/com/company/Task4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/laba_6/com/company/Task5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_7/src/com/company/Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/laba_7/src/com/company/Task_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_7/src/com/company/Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/laba_7/src/com/company/Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_7/src/com/company/Task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/laba_7/src/com/company/Task_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/laba_7/com/company/Task_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/laba_7/com/company/Task_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/laba_7/com/company/Task_3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/laba_7/com/company/Task_4.class" beforeDir="false" />
-    </list>
+    <list default="true" id="4d0f1068-852a-4c55-876e-2fe499a44736" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
