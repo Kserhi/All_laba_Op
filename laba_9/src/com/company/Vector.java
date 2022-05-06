@@ -1,15 +1,23 @@
 package com.company;
+import java.util.Random;
+ class Vector {
+     private double x;
+     private double y;
+     private double z;
 
-public class Vector {
-    double x;
-    double y;
-    double z;
 
-    public Vector(double x, double y, double z) {
+     Vector(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
+     Vector(double lend){
+         this.x=this.y=this.z=lend;
+     }
+     Vector(){
+         this.x=this.y=this.z=0;
+     }
+
     //перевизначиний
     void vectorAp(int n){//просто шось робе
         System.out.println("Vector("+(x+n)+";"+(y+n)+";"+(z+n)+")");
@@ -28,17 +36,47 @@ public class Vector {
     }
 
 
-    void test(int...array){//експеремент
-        for(int i : array){
-            x+=i;
-            y+=i;
-            z+=i;
-        }
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
+     void falsVect(Cord cord,Mathematics mathematics ){//експеремент
+        Random random=new Random();
+        double x1=x,y1=y,z1=z;
+
+        x1+=(random.nextDouble()*10-5)/mathematics.getLevelSkill();
+        y1+=(random.nextDouble()*10-5)/mathematics.getLevelSkill();
+        z1+=(random.nextDouble()*10-5)/mathematics.getLevelSkill();
+
+        System.out.println(x1+cord.getX());
+        System.out.println(y1+cord.getY());
+        System.out.println(z1+cord.getZ());
+
     }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+     public double getX() {return x;
+     }
+     public double getY() {return y;
+     }
+     public double getZ() {
+         return z;
+     }
+     public void setX(double x) {
+         this.x = x;
+     }
+     public void setY(double y) {
+         this.y = y;
+     }
+     public void setZ(double z) {
+         this.z = z;
+     }
 }
