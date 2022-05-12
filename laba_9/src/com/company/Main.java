@@ -11,8 +11,7 @@ public class Main {
 
         vector.falsVect(cord,mathematics);
         System.out.println();
-        System.out.println();
-        System.out.println();
+
         System.out.println(cord.pyanaTohka(mathematics).getX());
         System.out.println(cord.pyanaTohka(mathematics).getY());
         System.out.println(cord.pyanaTohka(mathematics).getZ());
