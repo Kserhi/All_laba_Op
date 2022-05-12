@@ -2,7 +2,10 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-    Menu.menu();
+        //Menu.menu();
+        Mathematics mathematics=new Mathematics();
+       mathematics.inicializacia();
+       mathematics.present();
 
     }
 }

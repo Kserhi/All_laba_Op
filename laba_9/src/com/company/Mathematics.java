@@ -1,12 +1,19 @@
 package com.company;
-
+import java.util.Scanner;
 class Mathematics extends Teachers{
 
     public Mathematics(int levelSkill,String name, int age, double weight) {
         super(levelSkill, name, age, weight);
         setProfession("Матиматик(чка)");
     }
+    Mathematics(){}
 
+    void inicializacia(){
+        Scanner scanner=new Scanner(System.in);
+        setLevelSkill(scanner.nextInt());
+        setAge(scanner.nextInt());
+        setWeight(scanner.nextDouble());
+    }
 
 
     double distance(Vector vector, Cord M0, Cord M1){//приймає напрямний вектор і точну яка належить прямій

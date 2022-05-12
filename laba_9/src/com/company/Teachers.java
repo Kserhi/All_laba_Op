@@ -20,7 +20,7 @@ public class Teachers {
         this.age = age;
         this.weight = weight;
     }
-
+    public Teachers(){}
 
     void present(){
         System.out.println("Вісім привіт Я "+profession+" "+name+" мені "+age+" років і моя вага становить "+weight+" кілограмів");
