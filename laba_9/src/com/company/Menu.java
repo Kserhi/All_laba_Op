@@ -33,9 +33,18 @@ public class Menu {
 
 
         switch (namber){
-            case PREZENT -> Menu.setPrezent();
-            case RAN -> Menu.setRan();
-            case EXIT -> System.out.println("Кінець виконання програми");
+            case PREZENT -> {
+                Menu.setPrezent();
+                break;
+            }
+            case RAN -> {
+                Menu.setRan();
+                break;
+            }
+            case EXIT -> {
+                System.out.println("Кінець виконання програми");
+                break;
+            }
         }
 
 
@@ -75,6 +84,18 @@ public class Menu {
         switch (namber){
             case MATHEMATICS -> {
                 Mathematics mathematics=new Mathematics();
+                System.out.println("Спочатку потрібно сворити вуйка матиматика");
+                mathematics.inicializacia();
+                System.out.println("Він може привітатися : 1 , або порахувати відстань від точки до прямої: 2");
+                namber=scanner.nextInt();
+                switch (namber){
+                    case 1:{
+                        mathematics.present();
+                        break;
+                    }
+                    case 2: Mathematics.aVoid(mathematics);
+                    break;
+                }
 
             }
         }
