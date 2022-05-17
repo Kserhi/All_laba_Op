@@ -14,9 +14,14 @@ import java.util.Random;
      Vector(double lend){
          this.x=this.y=this.z=lend;
      }
-     Vector(){
-         this.x=this.y=this.z=0;
+     Vector(Vector vector){
+         this.x=vector.getX();
+         this.y=vector.getY();
+         this.z=vector.getZ();
      }
+     Vector(){}
+
+
 
     //перевизначиний
     void vectorAp(int n){//просто шось робе
@@ -31,8 +36,8 @@ import java.util.Random;
     }
 
 
-    double vectorAbs(){//модуль вектора
-        return Math.sqrt(Math.pow(x,2)+Math.pow(y,2)+Math.pow(z,2));
+    static double vectorAbs(Vector vector){//модуль вектора
+        return Math.sqrt(Math.pow(vector.getX(), 2)+Math.pow(vector.getY(), 2)+Math.pow(vector.getZ(), 2));
     }
 
 

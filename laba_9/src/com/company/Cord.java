@@ -2,85 +2,51 @@ package com.company;
 
 import java.util.Random;
 
-class Cord{
-    private double x;
-    private double y;
-    private double z;
+class Cord extends Vector {
 
-
-    Cord(double x, double y, double z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+    public Cord(double x, double y, double z) {
+        super(x, y, z);
     }
+
+
     Cord(double x, double y) {
-        this.x = x;
-        this.y = y;
-        this.z=(x+y)/2;
-    }
-    Cord(Cord cord) {
-        this.x = cord.x;
-        this.y = cord.y;
-        this.z = cord.z;
-    }
-    Cord(double lend){
-        this.x=this.y=this.z=lend;
-    }
-    Cord(){
-        this.x=this.y=this.z=0;
+        super(x, y, (x + y) / 2);
     }
 
-
-
-    void present(){//статине імя динамічна логіка
-        System.out.println("Привіт я точка з кординатами:("+x+";"+y+";"+z+")");
+    public Cord(double lend) {
+        super(lend);
     }
 
-    //перевизначиний
-    double distanceFoPoint(Cord point1){//відстань до точки
-        return Math.sqrt(Math.pow(x-point1.x,2)+Math.pow(y-point1.y,2)+Math.pow(z-point1.z,2));
+    public Cord(Vector vector) {
+        super(vector);
     }
-    double distanceFoPoint(double x1,double y1,double z1){//відстань до точки
-        return Math.sqrt(Math.pow(x-x1,2)+Math.pow(y-y1,2)+Math.pow(z-z1,2));
+
+    public Cord() {
+    }
+
+    void present() {//статине імя динамічна логіка
+        System.out.println("Привіт я точка з кординатами:(" + getX() + ";" + getY() + ";" + getZ() + ")");
     }
 
 
+    double distanceFoPoint(Cord point1) {//відстань до точки
+        return Math.sqrt(Math.pow(getX() - point1.getX(), 2) + Math.pow(getY() - point1.getY(), 2) + Math.pow(getZ() - point1.getZ(), 2));
+    }
 
-    Cord pyanaTohka(Mathematics mathematics){
 
-        Random random=new Random();
-        Cord cord =new Cord(x,y,z);
+    Cord pyanaTohka(Mathematics mathematics) {
 
-        cord.x+=(random.nextDouble()*10-5)/mathematics.getLevelSkill();
-        cord.y+=(random.nextDouble()*10-5)/mathematics.getLevelSkill();
-        cord.z+=(random.nextDouble()*10-5)/mathematics.getLevelSkill();
+        Random random = new Random();
+        Cord cord = new Cord(getX(), getY());
+
+        cord.setX(getX() + (random.nextDouble() * 10 - 5) / mathematics.getLevelSkill());
+        cord.setY(getY() + (random.nextDouble() * 10 - 5) / mathematics.getLevelSkill());
+        cord.setZ(getZ() + (random.nextDouble() * 10 - 5) / mathematics.getLevelSkill());
 
         return cord;
     }
 
-
-
-
-
-
-    public double getX() {
-        return x;
+    void cordAp(double n) {
+        super.vectorAp(n);
     }
-    public double getY() {
-        return y;
-    }
-    public double getZ() {
-        return z;
-    }
-    public void setX(double x) {
-        this.x = x;
-    }
-    public void setY(double y) {
-        this.y = y;
-    }
-    public void setZ(double z) {
-        this.z = z;
-    }
-
-
 }
